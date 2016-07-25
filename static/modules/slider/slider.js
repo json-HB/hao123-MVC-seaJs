@@ -5,39 +5,39 @@ MVC
 .addModel('slider', {
 	data: [
 		{
-			"icon": "01.png",
+			"icon": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2015-09-16/5158508c9d04f5a0f4fe2d8de9da1dc0.png",
 			"iconTitle": "萌主页",
 			"title": "当女孩遇到熊",
 			"content": "深山里有萝莉出没",
-			"img": "01.png"
+			"img": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/moe/0723zc5.png"
 		},
 		{
-			"icon": "02.jpg",
+			"icon": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2015-10-07/1f955fdb77200a7e9dafe2e4ce908dc7.jpg",
 			"iconTitle": "动漫",
 			"title": "会说话的汤姆猫",
 			"content": "汤姆猫给你讲故事",
-			"img": "02.png"
+			"img": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/moe/0723zc2.png"
 		},
 		{
-			"icon": "03.png",
+			"icon": "https://www.hao123.com/r/image/2016-07-22/abcdfced1d1c8721615890716cc91874.png",
 			"iconTitle": "LOL直播",
 			"title": "中单蚂蚱输出爆炸",
 			"content": "JY解说",
-			"img": "03.jpg"
+			"img": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-22/95508069f8fd9d213cb3e9139468b5cc.jpg"
 		},
 		{
-			"icon": "04.png",
+			"icon": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2015-10-23/1a37805cacf29a3d260452f2a613ea6a.png",
 			"iconTitle": "景点门票",
 			"title": "厦门方特梦幻王国",
 			"content": "跟着跑男一起狂欢",
-			"img": "04.jpg"
+			"img": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-22/4980c19b003b4fe58c57dfcb9ded2fc4.jpg"
 		},
 		{
-			"icon": "05.png",
+			"icon": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2015-09-16/5ca5d8a0de5f2c33472f15b6eabc8e1f.png",
 			"iconTitle": "hao到家",
 			"title": "美食送到家",
 			"content": "吃货福音私人订制",
-			"img": "05.png"
+			"img": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-24/6e39118f82eb844155db3562356580df.png"
 		}
 	]
 })
@@ -54,10 +54,10 @@ MVC
 	].join('')	// 这是个数组，我们需要的是字符串，所以调用jion方法
 	var liTpl = [
 		'<li>',
-			'<img src="img/slider_icon_{#icon#}" alt="" />',
+			'<img src="{#icon#}" alt="" />',
 			'<p>{#iconTitle#}</p>',
 			'<div>',
-				'<img src="img/slider_img_{#img#}" alt="" />',
+				'<img src="{#img#}" alt="" />',
 				'<h4>{#title#}</h4>',
 				'<p>{#content#}</p>',
 			'</div>',
