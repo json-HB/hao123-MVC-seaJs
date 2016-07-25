@@ -166,7 +166,7 @@
 	    background-position: -20px -362px;
 }
 #frame-body .servicetab .content ul li span{
-	    cursor: auto;
+	    cursor: pointer;
 	    color: #333;
 	    font-size: 14px;
 }
