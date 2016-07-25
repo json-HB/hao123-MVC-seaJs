@@ -45,5 +45,17 @@ define(function(require){
 	})
 	.addCtrl("servicetab",function(model,view,observer){
 		var dom=view.create("servicetab");
+		var lock=false;
+		dom.delegate(".right","click",function(){
+			lock=!lock;
+			var state=lock?0:1;
+			if(state){
+				$(this).removeClass("open")
+				observer.fire("slideUp")
+			}else{
+				$(this).addClass("open")
+				observer.fire("slideDown")
+			}
+		})
 	})	
 })
