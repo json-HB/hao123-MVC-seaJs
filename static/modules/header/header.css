@@ -307,7 +307,7 @@ html, body {
 		height:446px;
 		background: white;
 		border: 1px solid #ccc;
-		z-index: 999;
+		z-index: 9999999;
 	}
 	.login.open{
 		display: block;
