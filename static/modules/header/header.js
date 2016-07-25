@@ -10,8 +10,8 @@ MVC
 .addModel('header', {
 	weather: {
 		city: '北京',
-		text: '晴',
-		icon: 'a53',
+		text: '雨',
+		icon: 'https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/weather/v1/a3.png',
 		temperature: '29 ~ 15℃'
 	},
 	date: {
@@ -25,15 +25,15 @@ MVC
 	adList: [
 		{
 			id: '1',
-			url: 'ad_1.jpg'
+			url: 'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-22/3014791910749041be89669021585088.jpg'
 		},
 		{
 			id: '2',
-			url: 'ad_2.jpg'
+			url: 'https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-22/f1a861eb4cc55cbf63b7178b66fe27fb.jpg'
 		},
 		{
 			id: '3',
-			url: 'ad_3.jpg'
+			url: 'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-22/2a762faca36ca00a5c7211737c082368.jpg'
 		}
 	]
 })
@@ -46,10 +46,10 @@ MVC
 	var tpl = [
 		'<div class="container">',
 			'<div class="header-left">',
-				'<img src="img/logo.png" alt="" />',
+				'<img src="https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/richanglogo168_24.png" alt="" />',
 				'<span class="weather">',
 					'<strong class="city">{#weather.city#}</strong>',
-					'<strong><img src="img/{#weather.icon#}.png" alt="" /> {#weather.text#} {#weather.temperature#}</strong>',
+					'<strong><img src="{#weather.icon#}" alt="" /> {#weather.text#} {#weather.temperature#}</strong>',
 				'</span>',
 				'<span class="date"><b>{#date.month#} {#date.day#}</b></span>',
 				'<span class="star"><b>星座运势</b></span>',
@@ -63,7 +63,7 @@ MVC
 			'</div>',
 		'</div>'
 	].join('');
-	listTpl = '<li><img src="img/{#url#}" alt="" /></li>';
+	listTpl = '<li><img src="{#url#}" alt="" /></li>';
 	// 第四步定义模板字符串
 	var html  = listHtml = '';
 	// 第五步格式化模板
