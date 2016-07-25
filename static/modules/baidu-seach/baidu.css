@@ -1,16 +1,49 @@
 	.json-search-panel-box{
 		width:1349px;
 		height:82px;
+		position: relative;
 	}
 	.json-search-panel-box .json-search-panel{
 		width:1190px;
 		margin:24px auto;
 		position: relative;
+		top:-16px;
+	}
+	#fastBrow{
+		width:109px;
+		height: 16px;
+		border: 1px dashed #bbb;
+		cursor: pointer;
+		padding: 1px 3px;
+		font-size: 12px;
+    	color: #666;
+    	position: relative;
+    	left: 977px;
+    	top: -35px;
+    	display: none;
+	}
+	#fastBrow i{
+	width: 10px;
+    height: 10px;
+    font-size: 0;
+    overflow: hidden;
+    line-height: 10px;
+    display: inline-block;
+    background-position: -79px -1664px;
+    margin-right: 3px;
+    position: relative;
+    top: 1px;
+    left:0px;
+   	background-image: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/Z8/OG/D1/3Q/dD/index_icon.png);
+	}
+	#fastBrow:hover{
+		text-decoration: underline;
+		border-style: solid;
 	}
 	.json-search-panel-box .json-search-panel a.s-wea{
 		position: relative;
 		display: inline-block;
-		background: url(../../../img/baidu/index_widthlg.png) no-repeat -10px -212px;
+		background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/0W/zO/-A/q4/0Z/4/index_widthlg.png) no-repeat -10px -212px;
 		width: 120px;
    		height: 40px;
         cursor: auto;
@@ -39,19 +72,19 @@
 		font: normal 12px/45px simsun;
 		background: white;
 	} 
-	.json-search-panel-box .json-search-panel .seach i{
+		.json-search-panel-box .json-search-panel .seach i{
 		display: block;
 		position: absolute;
 		width:9px;
 		height: 6px;
 		left:42px;
 		top:18px;
-		background: url(../../../img/baidu/index_widthlg.png) no-repeat -52px -97px; 
+		background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/0W/zO/-A/q4/0Z/4/index_widthlg.png) no-repeat -52px -97px; 
 	}
 	.json-search-panel-box .json-search-panel .seach i.shang{
-		background-position: -52px -104px;
+		background-position:-52px -104px;
 	}
-		
+
 	.json-search-panel-box .json-search-panel .seach .wangye-list{
 		list-style: none;
 		width:52px;
@@ -94,7 +127,7 @@
 		width:18px;
 		height: 18px;
 		border-radius: 50%;
-		background:url(../../../img/baidu/sug_icon.png) 0 -0;
+		background:url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/H4/69/JL/C-/zO/sug_icon.png) 0 0;
 		position: absolute;
 		right:7px;
 		top:13px;
@@ -103,6 +136,7 @@
 		font-size:14px;
 		line-height: 20px;
 	}
+
 	.json-search-panel-box .json-search-panel .seach b.white{
 		background-position: 0 -18px;
 	}
