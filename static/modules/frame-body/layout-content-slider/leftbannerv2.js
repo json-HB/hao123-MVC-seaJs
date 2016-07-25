@@ -5,13 +5,13 @@ define(function(require){
 	MVC.addModel("leftbannerv2",{
 		data:[
 			{
-				src:"img/sliderPic/43ffb7f4bf24766ae03b2cdf92747582.jpg",
+				src:"https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-22/fbe72cc7652a5911ab0bcc160902dcd3.jpg",
 			},
 			{
-				src:"img/sliderPic/07232144.jpg",
+				src:"https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-22/22b861842412039ed716ecb9854b6dfd.jpg",
 			},
 			{
-				src:"img/sliderPic/e6eb92457630ed9a64b39e9f8a551082.jpg",
+				src:"https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/0724zuo.jpg",
 			}
 		]
 	})
@@ -47,7 +47,7 @@ define(function(require){
 		dom.html(html).appendTo(".frame-body");
 	
 	})
-	.addCtrl("leftbannerv2",function(model,view){
+	.addCtrl("leftbannerv2",function(model,view,observer){
 		var dom=view.create("leftbannerv2");
 		PicFade("leftbannerv2",1000,2500);
 
