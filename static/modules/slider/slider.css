@@ -1,14 +1,14 @@
-* {margin: 0;padding: 0;list-style: none;}
 .slider {
 	position: fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
+	z-index: 999;
 }
 .slider .container {
 	width: 50px;
 	padding-top: 50px;
-	background: #ccc;
+	background: #eeeeee;
 	text-align: center;
 	height: 100%;
 	font-size: 12px;
@@ -19,6 +19,7 @@
 	position: relative;
 	padding: 6px 0;
 	cursor: pointer;
+	z-index: 999;
 }
 .slider li div {
 	position: absolute;
@@ -31,6 +32,7 @@
 	border: 1px solid #ccc;
 	border-left: 0;
 	display: none;
+
 }
 .slider li div img {
 	position: absolute;
@@ -44,10 +46,11 @@
 	padding-bottom: 8px;
 }
 .slider li:hover {
-	background: #f0f0f0;
+	background: #fafafa;
 }
 .slider li:hover div {
 	display: block;
+	background: #fafafa;
 }
 .slider .arrow {
 	width: 50px;
@@ -60,6 +63,7 @@
 	background-position: -49px -73px;
 	background-repeat: no-repeat;
 	cursor: pointer;
+	z-index: 9999;
 }
 .slider .arrow:hover {
 	background-color: #efefef;
