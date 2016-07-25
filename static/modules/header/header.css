@@ -72,7 +72,6 @@
 	overflow: hidden;
 }
 .header .city i {
-	background: url(../../../image/icons.png) -52px -97px;
 	padding: 3px 5px;
 	display: inline-block;
 	margin-left: 2px;
@@ -99,7 +98,7 @@
 
 .header-right span b {
 	padding-left: 40px;
-	background: url(../../../img/icons.png);
+	background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/0W/zO/-A/q4/0Z/4/index_widthlg.png);
 
 }
 
@@ -123,6 +122,7 @@
 	margin-left: -1px;
 	width: 228px;
 	display: none;
+	z-index: 999;
 }
 .email-layer.open {
 	display: block;
@@ -236,7 +236,7 @@ html, body {
 }
 .skin .skin-header .save-btn {
 	color: #fff;
-	background: #34a637 url(../../../img/index_icon.png) no-repeat -263px -88px;
+	background: #34a637 url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/Z8/OG/D1/3Q/dD/index_icon.png) no-repeat -263px -88px;
 	padding-left: 50px;
 }
 .skin .skin-header .cancel-btn {
@@ -307,6 +307,7 @@ html, body {
 		height:446px;
 		background: white;
 		border: 1px solid #ccc;
+		z-index: 999;
 	}
 	.login.open{
 		display: block;
@@ -323,7 +324,7 @@ html, body {
 	    font-family: "宋体";
 	    font-weight: bold;
 	    color: #666;
-		background: url("../../../img/baidu_logo_24_056405eb.png") no-repeat 10px 5px;
+		background: url(https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/img/baidu_logo_24_056405eb.png) no-repeat 10px 5px;
 		height:100%;
 		width:80%;
 		padding-left:46px;
@@ -401,7 +402,7 @@ html, body {
 	.login .login-body .body-right div:nth-child(1) a::before{
 		display: block;
 		content:"";
-		background: url("../../../img/smsSwitchPhone_296e835b.png") no-repeat;
+		background: url(https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/img/smsSwitchPhone_296e835b.png) no-repeat;
 		width:14px;
 		height:14px;
 		position: absolute;
@@ -434,16 +435,16 @@ html, body {
 		border: 1px solid #488ee7;
 	}
 	.login .login-body .body-right form div:nth-child(1) input{
-		background: url("../../../img/input_icons_24_915272c4.png") no-repeat 3px -61px;
+		background: url(https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/img/input_icons_24_915272c4.png) no-repeat 3px -61px;
 	}
 	.login .login-body .body-right form div:nth-child(2) input{
-		background: url("../../../img/input_icons_24_915272c4.png") no-repeat 3px -142px;
+		background: url(https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/img/input_icons_24_915272c4.png) no-repeat 3px -142px;
 	}
 	.login .login-body .body-right form div:nth-child(1) input:focus{
-		background: url("../../../img/input_icons_24_915272c4.png") no-repeat 3px -101px;
+		background: url(https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/img/input_icons_24_915272c4.png) no-repeat 3px -101px;
 	}
 	.login .login-body .body-right form div:nth-child(2) input:focus{
-		background: url("../../../img/input_icons_24_915272c4.png") no-repeat 3px -182px;
+		background: url(https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/img/input_icons_24_915272c4.png) no-repeat 3px -182px;
 	}
 	.login .login-body .body-right form div:nth-child(3){
 		margin-top:20px;
@@ -524,9 +525,9 @@ html, body {
 	.login .body-right-foot a:nth-of-type(1){
 		margin-top:10px;
 		margin-right:5px;
-		background: url("../../../img/pass_login_icons_7241098f.png") no-repeat -88px 0;
+		background: url(https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/img/pass_login_icons_7241098f.png) no-repeat -88px 0;
 	}
 	.login .body-right-foot a:nth-of-type(2){
 		margin-top:10px;
-		background: url("../../../img/pass_login_icons_7241098f.png") no-repeat -64px 0;
+		background: url(https://ss0.bdstatic.com/5LMZfyabBhJ3otebn9fN2DJv/passApi/img/pass_login_icons_7241098f.png) no-repeat -64px 0;
 	}
