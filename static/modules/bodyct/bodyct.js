@@ -5,7 +5,7 @@ define(function(require){
 	var Throttle=require("tool/Throttle");
 	
 	MVC.addModel("bodyct",{
-		img:"img/d9cf08093b228795535a8d142d78f9fb.png"
+		img:"https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2016-07-22/0298257c27ae9e3b4df0f91a892efe5c.png"
 	})
 	.addView("bodyct",function(model,template){
 		var dom=$('<div class="menus" id="menus"></div>');
