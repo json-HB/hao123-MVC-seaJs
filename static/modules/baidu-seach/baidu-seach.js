@@ -74,9 +74,9 @@ define(function(require){
 		var data=model.get("baiduSeach");
 		var tpl=[
 			'<div class="json-search-panel">',
-			'<a class="s-wea" href="javascript:;"></a>',
-			'<div class="seach">',
-			'<ul class="news-push">{#newsPush#}',
+				'<a class="s-wea" href="javascript:;"></a>',
+				'<div class="seach">',
+				'<ul class="news-push">{#newsPush#}',
 				/*'<li class="importNew xin"><i>1</i><span>浙江发布高温预警</span></li>',
 				'<li class="importNew xin"><i>2</i><span>烈士李磊骨灰安葬</span></li>',
 				'<li class="importNew xin"><i>3</i><span>开心网创始人离职</span></li>',
@@ -89,7 +89,7 @@ define(function(require){
 				'<li><i>10</i><span>九把刀亲吻陈晓</span></li>',*/
 			'</ul>',
 				'<span class="wangye">网页</span>',
-				'<i></i>',
+				'<i class="xia"></i>',
 				'<ul class="wangye-list" style="display:none">',
 					'<li><a href="javascript:;">网页</a></li>',
 					'<li><a href="javascript:;">音乐</a></li>',
@@ -122,6 +122,10 @@ define(function(require){
 					'<li><a href="javascript:;">金钟国签中国公司</a></li>',*/
 				'</ul>',
 			'</div>',
+			'<div id="fastBrow">',
+					'<i></i>',
+					'<span>上网最快的浏览器</span>',
+				'</div>',
 		'</div>	'
 		].join("");
 		var liHtml1=liHtml2="";
@@ -146,6 +150,7 @@ define(function(require){
 		// 显示影藏
 		var dom=view.create("baiduSeach");
 		dom.delegate(".wangye","click",function(){
+			dom.find(".seach i").addClass("shang");
 			dom.find(".wangye-list").toggle();
 		})
 		//网页的下拉菜单事件
@@ -153,6 +158,7 @@ define(function(require){
 			if($(this).index()==8){
 				return;
 			}
+			dom.find(".seach i").removeClass("shang");
 			var value=$(this).children("a").html();
 			dom.find(".wangye").html(value);
 			dom.find(".wangye-list").toggle();
@@ -220,14 +226,42 @@ define(function(require){
 		//document 点击事件 ul 收回
 		$(document).on("click",function(ev){
 			if(!$.contains($(".news-push")[0],ev.target)&&ev.target!==dom.find(".itemNum")[0]){
+				
 				dom.find(".news-push").hide();
 				dom.find(".itemNum").html("5")
 			}
 			
 			if((!$.contains($(".wangye-list")[0],ev.target))&& (ev.target!==dom.find(".wangye")[0])){
 				dom.find(".wangye-list").hide();
+				dom.find(".seach i").removeClass("shang");
 			}
 			
+		})
+		var lock=true;
+		$(window).scroll(function(){
+			if($(window).scrollTop()>100){
+				dom.css({"position":"fixed",
+						"backgroundColor":"#f3f3f3",
+						"opacity":"0.97",
+						"alpha":'filter(opacity=97)',
+						"top":0,
+						"left":0,
+						"zIndex":99999
+					})
+				dom.find(".grid").hide();
+				$("#fastBrow").show();
+			}else{
+				dom.css({"position":"relative",
+					"backgroundColor":"",
+					"opacity":"1",
+					"alpha":'filter(opacity=100)',
+					"top":0,
+					"left":0
+
+			})
+				$("#fastBrow").hide();
+				dom.find(".grid").show();
+			}
 		})
 
 
