@@ -28,18 +28,20 @@ define(function(require){
 		dom.html(html).appendTo("body");
 		return dom;
 	})
+	//返回顶部
 	.addCtrl("sliderTop",function(model,view,observer){
 		var dom=view.create("sliderTop");
 		$(window).scroll(function(){
-			if($(window).scrollTop()>1500){
+			if($(window).scrollTop()>1400){
+				dom.find(".goToTop").on("click",function(){
+					scrollAnimate(0,700);
+				})
 				dom.find(".goToTop").html("返回顶部");
 			}
 			else{
+				dom.find(".goToTop").off()
 				dom.find(".goToTop").html("分类网址");
 			}
-		})
-		dom.find(".goToTop").on("click",function(){
-			scrollAnimate(0,700)
 		})
 
 	})
