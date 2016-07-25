@@ -9,63 +9,63 @@ MVC
 	chooseSkinId: '05',
 		"data": [
 		{
-			"id": "01",
-			"src": "small_01.jpg",
+			"id": "1",
+			"src": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-24/a9ade02eea646d29e5d05942a56c08f6.jpg",
 			"title": "飞船"
 		},
 		{
-			"id": "02",
-			"src": "small_02.jpg",
+			"id": "2",
+			"src": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2015-02-10/822fdf40d2a95dbf664b95e14c2cf449.jpg",
 			"title": "LOVE"
 		},
 		{
-			"id": "03",
-			"src": "small_03.jpg",
-			"title": "kenny的海洋"
+			"id": "3",
+			"src": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-24/cdfc99ea659f467893b43e0c02160dcf.jpg",
+			"title": "树叶纸飞机"
 		},
 		{
-			"id": "04",
-			"src": "small_04.jpg",
+			"id": "4",
+			"src": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-04-10/8664eec438f362b0617f2adf7e3e3cd3.jpg",
 			"title": "匹诺曹"
 		},
 		{
-			"id": "05",
-			"src": "small_05.jpg",
+			"id": "5",
+			"src": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-24/d25ac6dcf40e0b5ea8a4c0914e85cf62.jpg",
 			"title": "可爱萌宠"
 		},
 		{
-			"id": "06",
-			"src": "small_06.jpg",
+			"id": "6",
+			"src": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-24/978cb567734a3aa4d29d4d3119a3fc8c.jpg",
 			"title": "绿意盎然"
 		},
 		{
-			"id": "07",
-			"src": "small_07.jpg",
-			"title": "高圆圆"
+			"id": "7",
+			"src": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-10-29/bf2d02b808533646f6bc9a70c5bd547f.jpg",
+			"title": "爱上模特"
 		},
 		{
-			"id": "08",
-			"src": "small_08.jpg",
+			"id": "8",
+			"src": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-24/ab74dd0412738c1bf2d57a92faa48a6a.jpg",
 			"title": "约会ladycc"
 		},
 		{
-			"id": "09",
-			"src": "small_09.jpg",
+			"id": "9",
+			"src": "https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-24/496c3e1f5acd2563863a6d67823cbd56.jpg",
 			"title": "罗小黑战绩"
 		},
 		{
 			"id": "10",
-			"src": "small_10.jpg",
+			"src": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-24/d21ad32f9bc291b478fd1a09572f1c56.jpg",
 			"title": "艾米莉爱梦想"
 		},
 		{
 			"id": "11",
-			"src": "small_11.jpg",
+			"src": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-24/0176d090f9979b055f3bbe94fa22fb2d.jpg",
 			"title": "无知熊猫"
 		},
 		{
 			"id": "12",
-			"src": "small_12.jpg",
+			"src": "https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2014-11-23/f83ebfe1f127d644e276f0339a9177d7.jpg",
 			"title": "牛轰轰四叶草"
 		}
 	]
@@ -87,7 +87,7 @@ MVC
 			'<ul class="container">{#skinList#}</ul>',
 		'</div>'
 	].join('');
-	var skinItem = '<li data-id="{#id#}"><img src="img/skin/{#src#}" alt="" /><p>{#title#}</p><i></i></li>';
+	var skinItem = '<li data-id="{#id#}"><img src="{#src#}" alt="" /><p>{#title#}</p><i></i></li>';
 	// 定义模板字符串
 	var skinItemsHtml = '';
 	// 格式化模板
@@ -108,6 +108,20 @@ MVC
 .addCtrl('skin', function (model, view, observer) {
 	
 	var dom=null;
+	var bigBgPic=[
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/f38093604807c2cc31a84ca4194a0f4e.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/27fbf0ab0754745cf2b10c7e2309e9a5.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/1f21ed37e8dd574880fcf893b0051ca9.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/b430a1dfcea3e9053662d9f57509e731.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/3be7d0a25df72988ca2d78b4e45aa88f.jpg',
+		'https://www.hao123.com/r/image/2015-08-28/3bc7a03c8a30e719a4bab308efbe2fec.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-10-29/5d91878107d17b97037081a312791fb5.jpg',
+		'https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/af26c9afaa9118e3c95e6d69bdb4d68d.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/e0557ce96599f3e9b6bcab6e6c5e0e71.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/bef59c8e58cb93ef694290d0fef9916b.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/0a36d2f0a8f90e1adaf788a786343fa2.jpg',
+		'https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/r/image/2015-08-25/685c0cfe2db0de1a6b5aa3cf93650d2f.jpg'
+	]
 	var skinId = model.get('skin.chooseSkinId');
 	// 页面不存在我就要创建一个页面
 	function init () {
@@ -150,7 +164,7 @@ MVC
 		if (value === 'noSkin') {
 			$('body').css('background', '#fff');
 		} else {
-			$('body').css('background', 'url(img/skin/big_' + value + '.jpg) center top no-repeat')
+			$('body').css('background', 'url('+bigBgPic[parseInt(value)-1]+') center top no-repeat')
 		}
 	}
 
