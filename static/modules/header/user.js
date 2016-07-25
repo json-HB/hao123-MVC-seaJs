@@ -14,7 +14,7 @@ define(function(require){
 			'<div class="body-left">',
 				'<p>手机扫描，安全登录</p>',
 				'<div>',
-					'<img src="img/qrcode.png" alt="">',
+					'<img src="https://passport.baidu.com/v2/api/qrcode?sign=06f24057775cf2c1d47eee5aafc42436&uaonly=" alt="">',
 				'</div>',
 				'<div>请使用<a href="javascript:;">手机百度app</a>扫描登录</div>',
 			'</div>',
