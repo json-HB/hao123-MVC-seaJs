@@ -10,7 +10,8 @@ define(function (require, exports, module) {
 	require("m/frame-body/layout-content-slider/leftbannerv2");
 	require("m/frame-body/layout-content-slider/servicetab");
 	require("m/frame-body/layout-content-slider/sliderModule");
-	require("m/sliderTop/sliderTop.js")
+	require("m/sliderTop/sliderTop.js");
+	require("m/layout-content/layout-content.js");
 
 	return {
 		// 定义模块的入口
