@@ -1,8 +1,8 @@
 define(function(){
 
 	var PicFade=function(id,timer,interTimer){
-			var timer=timer||1000;
-			var interTimer=interTimer||1500;
+			var timer=timer||700;
+			var interTimer=interTimer||2500;
 			var $unit=$("#"+id);
 			var $leftBtn=$unit.find("span[class='left']");
 			var $rightBtn=$unit.find("span[class='right']");
@@ -29,6 +29,8 @@ define(function(){
 					$li.eq(old).fadeOut(timer);
 					old=idx;
 				}
+				else{return 
+				}
 			}
 			$leftBtn.click(function(){
 				hander();
@@ -37,9 +39,12 @@ define(function(){
 				idx--;
 				idx=idx<0?length:idx;
 				if(idx!=old){
-					$li.eq(idx).fadeIn(timer);
-					$li.eq(old).fadeOut(timer);
+					$li.eq(idx).fadeIn();
+					$li.eq(old).fadeOut();
 					old=idx;
+				}
+				else{
+					return 
 				}
 			})
 
