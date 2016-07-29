@@ -933,7 +933,7 @@ define(function(require){
 			PicModel:urlhtml
 
 		})
-		dom.html(html).appendTo("body")
+		dom.html(html).appendTo("#frame-body")
 		return dom;
 
 
