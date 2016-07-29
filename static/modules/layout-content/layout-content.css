@@ -1,9 +1,9 @@
 	.right-section{
 		width:900px;
 		height: 1929px;
-		position: relative;
-		top: -423px;
-		left: 371px;
+		position: absolute;
+		top: 48px;
+		left: 287px;
 		z-index: 999;
 	}
 	.layout-content-ct{
