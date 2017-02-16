@@ -39,7 +39,7 @@ define(function(require){
 			url:[
 				{src:"https://gss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/upload_21079580_1467095195703.jpg",tip:"女主播们的日常"},
 				{src:"https://gss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/upload_21326881_1469162842591.jpg",tip:"23岁征婚，父母催，带我走"},
-				{src:"https://gss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/upload_21326881_1468569142265.jpg",tip:"一人在外，想找个真心对我的"},
+				{src:"https://gss2.bdstatic.com/8_V1bjqh_Q23odCf/pacific/upload_23065258_1486976060911.jpg",tip:"一人在外，想找个真心对我的"},
 			]
 		}
 	},
