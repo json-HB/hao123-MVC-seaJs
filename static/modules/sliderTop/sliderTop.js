@@ -32,7 +32,7 @@ define(function(require){
 	.addCtrl("sliderTop",function(model,view,observer){
 		var dom=view.create("sliderTop");
 		$(window).scroll(function(){
-			if($(window).scrollTop()>1400){
+			if($(window).scrollTop()>1300){
 				dom.find(".goToTop").on("click",function(){
 					scrollAnimate(0,700);
 				})
