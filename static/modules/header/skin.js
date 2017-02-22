@@ -164,7 +164,7 @@ MVC
 		if (value === 'noSkin') {
 			$('body').css('background', '#fff');
 		} else {
-			$('body').css('background', 'url('+bigBgPic[parseInt(value)-1]+') center top no-repeat')
+			$('body').css('background', 'url('+bigBgPic[parseInt(value)-1]+') center top no-repeat fixed')
 		}
 	}
 
